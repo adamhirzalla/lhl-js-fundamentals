@@ -4,16 +4,16 @@ const judgeVegetable = (veggies, char) => {
   for (let veggie of veggies) {
     if (veggie[char] > highest) {
       highest = veggie[char];
-      best = veggie.submitter;
+      best = veggie;
     }
   }
-  return best;
+  return best.submitter;
 }
 
 const vegetables = [
   {
     submitter: 'Old Man Franklin',
-    redness: 10,
+    redness: 3,
     plumpness: 5
   },
   {
